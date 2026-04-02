@@ -1,50 +1,114 @@
-# Welcome to your Expo app 👋
+# UserListApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple React Native mobile application built with Expo that displays a filterable list of users with different roles (Admin, Customer, Vendor).
 
-## Get started
+## Features
 
-1. Install dependencies
+- **User List Display** — View all users with their names and roles
+- **Role-Based Filtering** — Filter users by Admin, Customer, or Vendor roles
+- **Responsive UI** — Clean, simple interface built with React Native
+- **Multi-Platform** — Runs on Android, iOS, and web
 
+## Tech Stack
+
+- **Expo** — Cross-platform mobile development framework
+- **React Native** — Native mobile app development
+- **TypeScript** — Type-safe JavaScript
+- **React Navigation** — App routing and navigation
+
+## Project Structure
+
+```
+UserListApp/
+├── app/                    # App screens and layout
+│   ├── (tabs)/            # Tab-based navigation
+│   │   ├── index.tsx      # Main user list screen
+│   │   └── explore.tsx    # Explore screen
+│   ├── _layout.tsx        # App layout configuration
+│   └── modal.tsx          # Modal component
+├── components/            # Reusable UI components
+├── constants/             # App constants and theme
+├── hooks/                 # Custom React hooks
+├── dataset.json           # User data
+├── package.json           # Dependencies
+└── README.md             # This file
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. Navigate to the project directory:
+   ```bash
+   cd UserListApp
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+### Running the App
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+Start the development server:
 ```bash
-npm run reset-project
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+You'll see options to open the app in:
+- **Android Emulator** — Press `a`
+- **iOS Simulator** — Press `i`
+- **Web Browser** — Press `w`
+- **Expo Go App** — Scan QR code with your phone
 
-## Learn more
+## Available Scripts
 
-To learn more about developing your project with Expo, look at the following resources:
+- `npm start` — Start development server
+- `npm run android` — Run on Android emulator
+- `npm run ios` — Run on iOS simulator
+- `npm run web` — Run in web browser
+- `npm run lint` — Run ESLint
+- `npm run reset-project` — Reset to blank project
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Data
 
-## Join the community
+User data is stored in `dataset.json` and includes 50 sample users with the following roles:
+- **Admin** — Administrator users
+- **Customer** — Customer users
+- **Vendor** — Vendor users
 
-Join our community of developers creating universal apps.
+## Usage
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Launch the app
+2. See the full user list displayed on the home screen
+3. Use the filter buttons (Admin, Customer, Vendor) to narrow down results
+4. Click the respective button again to deselect the filter
+
+## Development
+
+The app uses file-based routing via Expo Router. Edit files in the `app/` directory to modify screens and navigation.
+
+### Key Files
+
+- [app/(tabs)/index.tsx](UserListApp/app/(tabs)/index.tsx) — Main user list screen with filtering logic
+- [dataset.json](UserListApp/dataset.json) — User dataset
+- [constants/theme.ts](UserListApp/constants/theme.ts) — App theme and styling
+
+## Notes
+
+- No external API calls — all data is local
+- No AI or machine learning components
+- Simple, straightforward React Native implementation
+
+## License
+
+Private project for technical assessment.
+
+## Support
+
+For issues or questions, refer to the [Expo documentation](https://docs.expo.dev).

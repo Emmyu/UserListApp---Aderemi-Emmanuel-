@@ -11,11 +11,20 @@ A simple React Native mobile application built with Expo that displays a filtera
 
 ## Screenshots
 
-### Customer Filter
-![User List with Customer filter applied - showing all customer users](./screenshots/customer-filter.png)
-
-### Vendor Filter
-![User List with Vendor filter applied - showing all vendor users](./screenshots/vendor-filter.png)
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <b>Customer Filter</b><br>
+        <img src="./screenshots/customer-filter.png" alt="Customer Filter" width="250">
+      </td>
+      <td align="center" width="50%">
+        <b>Vendor Filter</b><br>
+        <img src="./screenshots/vendor-filter.png" alt="Vendor Filter" width="250">
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## Tech Stack
 
